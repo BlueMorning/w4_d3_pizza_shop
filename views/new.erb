@@ -1,0 +1,25 @@
+<form action="/pizzas" method="post">
+  <label for="first_name">First name</label>
+  <input type="text" name="first_name" id="first_name" />
+  <br>
+
+  <label for="last_name">Last name</label>
+  <input type="text" name="last_name" id="last_name"/>
+  <br>
+
+  <label for="topping">Topping</label>
+  <select type="text" name="topping" id="topping">
+    <% @toppings.each do |topping |%>
+      <option value="<%= topping %>"><%= topping %></option>
+    <% end %>
+  </select>
+  <br>
+
+  <label for="quantity">Quantity</label>
+  <input type="text" name="quantity" id="quantity"/>
+
+  <br>
+
+  <input type="submit" name="" value="Order Pizza" />
+
+</form>

@@ -1,0 +1,17 @@
+input, select {
+  height: 30px;
+  font-size: 20px;
+  margin: 10px 0;
+  width: 200px;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+
+.nav_list li {
+  display: inline-block;
+  width: 100px;
+  margin: 0px 20px;
+}

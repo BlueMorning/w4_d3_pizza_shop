@@ -1,0 +1,27 @@
+<form action="/pizzas/<%= @pizza.id %>" method="post">
+  <label for="first_name">First name</label>
+  <input type="text" name="first_name" id="first_name" value="<%= @pizza.first_name %>" />
+  <br>
+
+  <label for="last_name">Last name</label>
+  <input type="text" name="last_name" id="last_name" value="<%= @pizza.last_name %>" />
+  <br>
+
+  <label for="topping">Topping</label>
+  <select type="text" name="topping" id="topping" value="<%= @pizza.topping %>">
+    <% @toppings.each do |topping |%>
+      <option value="<%= topping %>" <% if (topping == @pizza.topping) %>selected<% end %>>
+        <%= topping %>
+      </option>
+    <% end %>
+  </select>
+  <br>
+
+  <label for="quantity">Quantity</label>
+  <input type="text" name="quantity" id="quantity" value="<%= @pizza.quantity %>" />
+
+  <br>
+
+  <input type="submit" name="" value="Update" />
+
+</form>

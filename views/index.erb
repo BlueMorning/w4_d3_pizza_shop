@@ -1,0 +1,22 @@
+
+
+
+
+<table>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Topping</th>
+      <th>Quantity</th>
+    </tr>
+  <% @pizzas.each do |pizza| %>
+    <tr>
+      <td><%= pizza.first_name %></td>
+      <td><%= pizza.last_name %></td>
+      <td><%= pizza.topping %></td>
+      <td><%= pizza.quantity %></td>
+      <td><a href="/pizzas/<%= pizza.id %>">Details</a></td>
+      <td><a href="/pizzas/<%= pizza.id %>/edit">Edit</a></td>
+    </tr>
+  <% end %>
+</table>
